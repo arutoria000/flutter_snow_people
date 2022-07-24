@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:snow_people/FirstPage.dart';
+import 'package:snow_people/SecondPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -109,7 +111,38 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              child: Text('テストアプリ'),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+            ),
+            ListTile(
+              title: const Text('画面遷移１'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context)=>const FirstPage(),)
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('画面遷移２'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context)=>const SecondPage(),)
+                );
+              },
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "665600995748",
+    "project_id": "snow-people",
+    "storage_bucket": "snow-people.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665600995748:android:08a44b84d45282e30d9131",
+        "android_client_info": {
+          "package_name": "com.example.snow_people"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665600995748-nfkjqbu5191410aieum3n1mksmpdv99b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFvy8qug2nAhGjZUiQDNvXP9ijgMl6PAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665600995748-nfkjqbu5191410aieum3n1mksmpdv99b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
